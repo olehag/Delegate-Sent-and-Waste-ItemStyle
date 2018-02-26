@@ -1,6 +1,6 @@
 #Lord Hagen / olehag04@nfk.no
 
-$RegKeyWaste = "HKCU:\SOFTWARE\Microsoft\Office\15.0\Outlook\Prefrences"
+$RegKeyWaste = "HKCU:\SOFTWARE\Microsoft\Office\15.0\Outlook\Preferences"
 New-Item -Path $RegKeyWaste -Name DelegateSentItemsStyle -Force
 New-ItemProperty -Path $RegKeyWaste -Name DelegateSentItemsStyle -Value 1
 Get-ItemProperty $RegKeyWaste
